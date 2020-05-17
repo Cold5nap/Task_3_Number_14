@@ -64,33 +64,8 @@ public class LinkedList<T> implements Iterable<T> {
         }
         return curr.value;
 
-        /*
-        for (ListItem curr = head; curr != null; curr = curr.next) {
-            if (index == 0) {
-                return curr.value;
-            }
-            index--;
-        }
-        return null;
-        */
     }
-  /*  public void remove(int index) throws Exception {
-        if (index < 0 || index > size - 1) {
-            throw new Exception("Incorrect index");
-        }
-        if (tail == null) {
-            throw new Exception("Nothing delete");
-        }
-        ListItem prev,next, curr = head;
-        while (index != 0) {
-            index--;
-            prev=curr;
-            curr = curr.next;
-        }
 
-        size--;
-    }
-*/
     public int size() {
         return size;
     }
