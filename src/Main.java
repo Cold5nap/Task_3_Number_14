@@ -39,17 +39,17 @@ public class Main {
         int[] arrOfLines = arguments.readIntArrFromConsoleOrFile();
 
         convertIntArrToStack(arrOfLines, oldStack);
+
+        System.out.println("------------");
+        System.out.println("Origin Stack: ");
         Task.printJavaStack(oldStack);
         System.out.println("------------");
-        System.out.println("Words from text in linked list: ");
-
-        System.out.println("\n" + "------------");
 
         Stack<Integer> newStack = Task.swapPairedElementsBasedOnJavaStack(oldStack);
 
-        System.out.println("New linked list: ");
-
-        System.out.println("\n" + "------------");
+        System.out.println("New Stack: ");
+        Task.printJavaStack(newStack);
+        System.out.println("------------");
 
         arguments.writeStackToFile(newStack);
     }

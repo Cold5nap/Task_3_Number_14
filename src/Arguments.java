@@ -50,7 +50,7 @@ public class Arguments {
             } else throw new Exception("File does not exist");
 
         } else {
-            System.out.println("Enter values of linked list: ");
+            System.out.println("Enter values of Stack: ");
             arr = ArrayUtils.readIntArrayFromConsole();
         }
         if (arr.length == 0) throw new Exception("Array is empty.");
